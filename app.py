@@ -3,7 +3,7 @@ import csv
 from datetime import datetime
 
 # Configurações
-METRICS_URL = "http://server:8082/api/metrics"  # URL do endpoint do controller de métricas
+METRICS_URL = "http://server:8082/metrics"  # URL do endpoint do controller de métricas
 CSV_FILE_PATH = f"/app/shared/metrics_{datetime.now().strftime('%Y%m%d_%H%M%S')}.csv"  # Nome do arquivo CSV com timestamp
 
 def fetch_metrics():
